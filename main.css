@@ -1,102 +1,142 @@
 body {
-  background-color: grey;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: grey;
 }
+
+
+/*Added to center element*/
 
 #terrain {
-  background-color: darkgreen;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 750px;
-  height: 500px;
-}
-#titre {
-  text-align: center;
-  color: red;
-}
-#middle-line {
-  background-color: white;
-  height: 500px;
-  width: 10px;
-  position: absolute;
-  left: calc(50% - 5px);
-  top: 0;
-}
-#goal1 {
-  height: 100px;
-  width: 75px;
-  background-color: gray;
-  position: absolute;
-  left: 0;
-  top: calc(50% - 50px)
-}
-#goal2 {
-  height: 100px;
-  width: 75px;
-  background-color: gray;
-  position: absolute;
-  right: 0;
-  top: calc(50% - 50px);
-}
-#goal-line1 {
-  height: 100px;
-  width: 75px;
-  border-top-right-radius: 100%;
-  border-bottom-right-radius: 100%;
-  background-color: darkgreen;
-  left: 75px;
-  top: calc(50% - 50px);
-  position: absolute;
-  border: 5px solid white;
-}
-#goal-line2 {
-  height: 100px;
-  width: 75px;
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 100%;
-  background-color: darkgreen;
-  right: 75px;
-  top: calc(50% - 50px);
-  position: absolute;
-  border: 5px solid white;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: darkgreen;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    height: 500px;
 }
 
-#terrainfond{
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 15px;
-  background-color: darkblue;
-  border-radius: 15px;
-  width: 780px;
-  height: 530px;
+#titre {
+    text-align: center;
+    color: red;
+    /*You have no background-color set but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.*/
+    background-color: inherit;
 }
+
+#middle-line {
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: white;
+    height: 500px;
+    width: 10px;
+    position: absolute;
+    left: calc(50% - 5px);
+    top: 0;
+}
+
+#goal1 {
+    height: 100px;
+    width: 75px;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 50px)
+}
+
+#goal2 {
+    height: 100px;
+    width: 75px;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: gray;
+    position: absolute;
+    right: 0;
+    top: calc(50% - 50px);
+}
+
+#goal-line1 {
+    height: 100px;
+    width: 75px;
+    border-top-right-radius: 100%;
+    border-bottom-right-radius: 100%;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: darkgreen;
+    left: 75px;
+    top: calc(50% - 50px);
+    position: absolute;
+    border: 5px solid white;
+}
+
+#goal-line2 {
+    height: 100px;
+    width: 75px;
+    border-top-left-radius: 100%;
+    border-bottom-left-radius: 100%;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: darkgreen;
+    right: 75px;
+    top: calc(50% - 50px);
+    position: absolute;
+    border: 5px solid white;
+}
+
+#terrainfond {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: darkblue;
+    border-radius: 15px;
+    width: 780px;
+    height: 530px;
+}
+
+
+/*Changed, div should not be child of h1*/
 
 #titrefond {
-  width: 160px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: darkblue;
-  border-radius: 15px;
-  margin-top: -50px;
+    width: 160px;
+    height: 50px;
+    /*Changed to remove two lines*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin: auto;
+    /*You have no color set but you have set a background-color. Made sure that cascading of colors keeps the text reasonably legible.*/
+    color: inherit;
+    background-color: darkblue;
+    border-radius: 15px;
 }
 
-.titre{
-  color: white;
-  text-align: center;
-  font-family: Chewy;
+.titre {
+    padding-top: 5px;
+    color: white;
+    /*You have no background-color set but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.*/
+    background-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    /*You are encouraged to offer a generic family as a last alternative*/
+    font-family: Chewy, cursive;
 }
 
-.ballon{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50px;
-  left: 210px;
+.ballon {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 210px;
 }
 
-copyright {
-  text-align: center;
-  color: white;
-  padding-top: 20px;
+/*Changed to ID*/
+#copyright {
+    text-align: center;
+    color: white;
+    /*You have no background-color set but you have set a color. Make sure that cascading of colors keeps the text reasonably legible.*/
+    background-color: inherit;
+    padding-top: 20px;
 }
